@@ -1,0 +1,50 @@
+let x: number;
+
+fn no_args(): number {
+    x = 1;
+    let y: number;
+    y = is_even(3*x + 1);
+    {
+        y = 2;
+        z = 3;
+        {
+            x = (z * y) % 2;
+        }
+    }
+    return x || y || z && !a;
+}
+
+fn truthy_value(x: number): bool {
+    return !!x;
+}
+
+fn main(args: list.string): number {
+    let a: number;
+    a = 1.0;
+
+    let b: number;
+    b = 1;
+
+    let c: string;
+    c = "1";
+
+    #let d: list.number;
+    #d = [];
+
+    #let e: list.number;
+    #e = [1 | 2 | 3 | []];
+
+    #let f: list.string;
+    #f = ["1", "2", "3" | []];
+
+    let g: bool;
+    g = 123;
+
+    let h: bool;
+    h = false;
+
+    #let x: list.number;
+    #x = [1 | 2 | get_number_list()];
+
+    #return 0;
+}
